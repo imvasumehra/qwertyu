@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function singPattern(compPattern) { 
+  			for (let i = 0; i < compPattern.length; i++) {  
+    			var audio = compPattern[i];         
+    			setTimeout(function (_audio) { 
+      				var sound = new Audio(_audio); 
+      				console.log("Playing " + _audio);
+      				sound.play();
+      			}, 10000, audio); 
+  			} 
+		}
+
+var soundUrls = ;
+
+singPattern(soundUrls);
+	</script>
+</head>
+<body onload="singPattern(['C:/Users/imvas/Desktop/App/public/music/Rec.mp3', 'http://soundbible.com/mp3/Strange_Days-Mike_Koenig-176042049.mp3']);">
+      <audio id="m1">
+    	<source src="m1.mp3" type="audio/mpeg">
+  		</audio>
+  		<audio id="m2" controls autoplay>
+    	<source src="Rec.mp3" type="audio/mpeg">
+  		</audio>
+  		<a href="as.html">qwerty</a>
+</body>
+</html>

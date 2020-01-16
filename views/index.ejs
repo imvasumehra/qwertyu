@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <title> ToDo App </title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+   
+  </head>
+<body>
+  <audio id="m1">
+    <source src="music/m1.mp3" type="audio/mpeg">
+  </audio>
+  
+  <audio id="m2">
+    <source src="music/Rec.mp3" type="audio/mpeg">
+  </audio>
+  
+  
+  
+  <div class="container">
+    <div class="heading">
+     <h2> Yoga Scheduler </h2>
+    </div>
+      <p id="date"></p>
+      <script src="js/j1.js">
+      </script>
+    <form action ="/addtask" method="POST">
+       1. Amritvela Meditation<br>
+       From? <input type="time" name="am_from">
+       To? <input type="time" name="am_to"> 
+       <br><br>
+       2. Murli Class<br>
+       <input type="radio" name="MC" value="At Home"> At home
+       <input type="radio" name="MC" value="At Centre"> At centre
+       <br><br>
+       3a. Yoga<br>
+       From? <input type="time" name="yg_from">
+       To? <input type="time" name="yg_to">  
+       <br>  <br>
+       3b. KarmaYoga<br>
+       From? <input type="time" name="kyg_from">
+       To? <input type="time" name="kyg_to">  
+       <br>  <br>
+       4. Applicability<br>
+       <select name="Applicability">
+        <option disabled selected value> -- select an option -- </option>
+        <option value="1">Atma Abhimani</option>
+        <option value="2">Looking forward to future ventures</option>
+        <option value="3">Focus on studies</option>
+        <option value="4">Checking Yourself</option>
+        <option value="5">Transition to become a voice from above</option>
+       </select>
+       <br><br>
+       5. Help<br>
+       <input type="checkbox" name="Help" value="Mansa"> Mansa
+       <input type="checkbox" name="Help" value="Vaacha"> Vaacha
+       <input type="checkbox" name="Help" value="Karmana"> Karmana
+       <br><br>
+       6. How many times did you practise the 5 forms?<br>
+       <input type="number" name="forms5">
+       <br><br>
+       7. Swamaan ka abhyaas<br>
+       <select name="ska">
+        <option disabled selected value> -- select an option -- </option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+       </select><br>
+       From? <input type="time" name="app_from">
+       To? <input type="time" name="app_to">  
+       <br><br>
+       8. Did you have good feeling towards others and wished good for everyone?<br>
+       <select name="gd_f">
+        <option disabled selected value> -- select an option -- </option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+       </select>
+       <br><br>
+       9. Namah Evening Meditation<br>
+       From? <input type="time" name="nem_from">
+       To? <input type="time" name="nem_to">  
+       <br><br>
+       10. Did you write a letter at night to Shiva Baba, giving him all your worries?<br>
+       <select name="letter">
+        <option disabled selected value> -- select an option -- </option>
+        <option  value="Yes">Yes</option>
+        <option value="No">No</option>
+       </select>
+       <br><br>
+       <br>
+       <input type="submit"/>
+      
+    </form>
+  </div>
+</body>
+</html>
